@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Black Sea</title>
+    <link rel="stylesheet" href="css/reset.css" media="screen" title="no title">
+    <link rel="stylesheet" href="css/styles.css" media="screen" title="no title">
+    <link rel="stylesheet" href="css/header.css" media="screen" title="no title">
+    <script src="https://use.fontawesome.com/82697c09ef.js"></script>
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <h1>Black Sea</h1>
+          <div class="nav-btn">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+      </div>
+      <nav class="nav-bar">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About Me</a></li>
+          <li><a href="#">Portfolio</a></li>
+          <li><a href="#">Contact Me</a></li>
+        </ul>
+      </nav>
+      <nav class="nav-bar nav-bar-mobile">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About Me</a></li>
+          <li><a href="#">Portfolio</a></li>
+          <li><a href="#">Contact Me</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div class="slider">
+      <h1>We need the tonic wildness</h1>
+      <button type="button" name="button">Read more</button>
+      <div class="slider-group">
+        <div class="slider-viewer">
+          <div class="slide slide-1"></div>
+          <div class="slide slide-2"></div>
+          <div class="slide slide-3"></div>
+        </div>
+      </div>
+      <div class="slide-btn"></div>
+    </div>
+    <section class="services">
+      <h1>At the same time that we are earnest to explore & learn all things</h1>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus consequuntur repudiandae temporibus magni, corrupti amet facere quibusdam excepturi culpa ut omnis perferendis, blanditiis tempore illum architecto. Nulla consequuntur nisi aliquam?
+      </p>
+      <div class="service-icons">
+        <i class="fa fa-pencil fa-5x"></i>
+        <i class="fa fa-globe fa-5x"></i>
+        <i class="fa fa-briefcase fa-5x"></i>
+      </div>
+
+    </section>
+    <section class="testimonials">
+      <div class="profile-pic">
+        <img src="images/dhavan.png" width="135" height="135" alt="" />
+        <h3>DHAVAN</h3>
+        <h1>,,</h1>
+      </div>
+
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi ab cumque, magni earum quasi dolore eos tempore obcaecati, aspernatur cum deleniti distinctio laborum, corporis modi alias tempora consectetur nam ex.
+      </p>
+    </section>
+    <section class="map">
+      <div class="form-container">
+        <form class="form" action="index.html" method="post">
+          <input type="text" name="name" value="" placeholder="Name">
+          <input type="email" name="email" value="" placeholder="Email Address">
+          <textarea name="message" rows="4" cols="40" placeholder="Message"></textarea>
+          <input type="image" src="images/form-btn.png" alt="Submit">
+        </form>
+      </div>
+
+    </section>
+
+    <footer>
+      <p>
+        Copyrights &copy; 2012 css author.com
+      </p>
+    </footer>
+  </body>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function () {
+      $('.nav-btn').on('click', function () {
+        $('.nav-bar-mobile').slideToggle();
+      });
+      $('.nav-bar-mobile').mouseleave( function () {
+        $('.nav-bar-mobile').slideUp();
+      });
+    });
+  </script>
+</html>

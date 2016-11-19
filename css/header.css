@@ -1,0 +1,99 @@
+header {
+  background-color: #4C97A2;
+}
+header h1 {
+  font-family: 'Cherry Swash', sans-serif;
+  color: #fff;
+  font-weight: normal;
+  padding: 10px 0;
+  padding-left: 10px;
+}
+.logo {
+  position: relative;
+}
+.nav-bar {
+  display: none;
+}
+.nav-bar ul {
+  list-style: none;
+  /*background-color: tomato;*/
+}
+.nav-bar ul li  {
+  width: 100%;
+  /*background-color: teal;*/
+}
+.nav-bar ul li a {
+  color: #fff;
+  display: block;
+  text-decoration: none;
+  text-align: center;
+  padding: 10px 0;
+  /*background-color: aqua;*/
+}
+.nav-bar-mobile {
+  display: block;
+}
+.nav-bar {
+  display: none;
+}
+/* Navigation Button*/
+.nav-btn {
+  height:30px;
+  width: 30px;
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  /*background: #000;*/
+}
+
+.nav-btn span {
+  display: block;
+  height: 5px;
+  background-color: #fff;
+}
+.nav-btn span:nth-child(2) {
+  position: relative;
+  top: 7px;
+}
+.nav-btn span:last-child {
+  position: relative;
+  top: 15px;
+}
+
+@media screen and (min-width: 640px) {
+
+  header {
+    display: flex;
+    flex-direction: row;
+  }
+  .logo {
+    flex-grow: 10;
+    /*background-color: yellow;*/
+  }
+  .nav-bar {
+    flex-grow: 1;
+    justify-content: flex-end;
+  }
+
+  .nav-bar ul li a {
+    padding: 25px 10px;
+    /*display: inline-block;*/
+    /*background-color: #000;*/
+  }
+  .nav-bar ul li  {
+    display: inline-block;
+    width: auto;
+  }
+  .nav-bar.nav-bar-mobile {
+    display: none;
+  }
+  .nav-bar {
+    display: block;
+  }
+  .nav-btn {
+    display: none;
+  }
+  .nav-btn:hover {
+    cursor: pointer;
+  }
+}
